@@ -1,0 +1,31 @@
+
+
+div#so {
+    font: normal 20pt arial;
+    background: rgb(6, 74, 129);
+    color: white;
+    width: 500px;
+    height: 200px;
+    text-align: center;
+}
+
+body {
+    font: normal 20pt arial;
+    background: rgb(151, 217, 226);
+    color: white;
+    width: 500px;
+    height: 200px;
+    line-height: 50px;
+    text-align: center;
+    padding: 20px;
+    
+}
+input {
+    width: 50px;
+    margin-bottom: 10px;
+}
+h1 {
+    margin-bottom: 5pt;
+    padding: 5pt;
+    font-size: 30pt;
+}

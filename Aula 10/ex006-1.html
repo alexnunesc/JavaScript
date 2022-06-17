@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos com DOM</title>
+    <link rel="stylesheet" href="/Aula 10/style.css">
+</head>
+<body>
+
+    <div id="area" onclick="clicar()" onmouseenter="entrar()" onmouseout="sair()">
+        Interaja...
+    </div>
+
+    <script>
+        var are = window.document.querySelector('div#area') //esta no escopo global
+        function clicar() {
+             are.innerText = "heyy!"
+             are.style.background = 'blue'
+        }
+        function entrar()  {
+            are.innerText = 'Começando...'
+        }
+        function sair() {
+            are.innerText = "Saiu!"
+            are.style.background = 'green'
+        }
+
+    </script>
+
+</body>
+</html>
