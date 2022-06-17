@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detran</title>
+</head>
+<body>
+    <h1>Siatema de Multas</h1>
+    Velocidade do carro <input type="number" name="txtvel" id="txtvel"> Km/h <!--Criando caixa de texto-->
+    <input type="button" value="Verificar"onclick='calcular()'> <!--Criando botão e um  comando para executar uma ação-->
+    <div id="res">Resultado</div> <!--Criando caixa para mostra o resultado-->
+
+    <script>
+        function calcular() {//Criando a  ação que sera execcutada ao acontecer o comando, deve ser o mesmo nome do elemento.
+            var txtv = document.querySelector('input#txtvel') //Selecionando elemento
+            var res = document.querySelector('div#res')//Selecionando elemento que recebra a ação
+            var vel = Number(txtv.value) //convertendo string em number
+            res.innerHTML = `<p>Sua velocidade é <strong>${vel}</strong> Km/h </p>`
+
+            if(vel > 60) {
+            res.innerHTML += `Sua velocidade foi acima de 60Km/h. <strong>MULTADO</strong>`
+            //+= para ele repetir  a modificação anterio, e adicionar a proxima, sem apagar.
+            }
+            res.innerHTML += `<p>Dirigar sempre com <strong>cinto de segurança</strong>. Boa Viagem! </p>`
+        }
+
+        
+    </script>
+</body>
+</html>
