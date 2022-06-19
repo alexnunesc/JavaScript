@@ -1,0 +1,9 @@
+article {
+    font: normal 20px arial;
+    color: azure;
+    background: rgb(253, 0, 198);
+    width: 400px;
+    height: 400px;
+    line-height: 100px;
+    text-align: center;
+}

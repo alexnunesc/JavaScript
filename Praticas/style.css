@@ -1,0 +1,9 @@
+div#area {
+    font: normal 20px arial;
+    color: azure;
+    background: rgb(253, 0, 198);
+    width: 200px;
+    height: 200px;
+    line-height: 200px;
+    text-align: center;
+}
