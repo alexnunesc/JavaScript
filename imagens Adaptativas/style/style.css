@@ -1,0 +1,12 @@
+body {
+    background: rgb(39, 200, 240);
+    text-align: center;
+}
+h1 {
+    color: aliceblue;
+    background: black;
+}
+input{
+    background: black;
+    color: aliceblue;
+}
